@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Appstate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook Appstate Generator</h1>
+        <form id="appstateForm">
+            <label for="email">Email / UID / Phone:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <button type="button" id="togglePassword">Show</button>
+            </div>
+
+            <button type="submit">Generate Appstate</button>
+        </form>
+
+        <!-- Error and status messages -->
+        <div id="errorMessage" class="error"></div>
+        <div id="appstateResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
